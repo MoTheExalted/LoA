@@ -1,0 +1,43 @@
+/* aboutUs.css */
+
+/* Image container */
+.bios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Individual bio */
+  .bios > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #0081fa; 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+  
+  /* Bio image */
+  .bios img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .bios h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: aliceblue;
+  }
+  
+  /* Bio paragraph */
+  .bios p {
+    margin: 0;
+    font-size: 20px; 
+    color: aliceblue; 
+  }
+  
+  

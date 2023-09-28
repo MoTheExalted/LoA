@@ -1,0 +1,41 @@
+#memberForm {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #memberForm label {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: aliceblue;
+  }
+  
+  #memberForm input[type="text"],
+  #memberForm input[type="password"] {
+    padding: 5px;
+    font-size: 10px;
+    width: 200px;
+  }
+
+  #greeting{
+    color: aliceblue;
+    font-size: 16px;
+  }
+
+  #purchaseItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  #purchaseItems figure img{
+    width: 500px;
+    height: 500px;
+  }
+
+  #purchaseItems figure figcaption{
+    color: aliceblue;
+    text-align: left;
+    font-size: 16px;
+  }

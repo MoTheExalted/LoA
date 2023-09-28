@@ -1,0 +1,115 @@
+
+  
+  .header {
+    background-image:linear-gradient(rgba(35, 88, 186, 0.844),rgba(2, 6, 14, 0.844)),url(images/TheLibrary.png);
+  }
+  
+  .goals button {
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .goals button:hover {
+    border: 1px solid yellow;
+    background: gold;
+    transition: 0.5s;
+  }
+  
+  section.course {
+    flex: 1;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: aliceblue;
+  }
+
+  section.course h1{
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  section.course h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: rgb(193, 176, 79);
+    font-style: oblique;
+  }
+  section.course h3 {
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  
+  section.course p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    padding: 20px 25px 30px 25px;
+  }
+  
+  /* row syles */
+  .row {
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row2{
+    margin-top: 8%;
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .subject {
+    flex-basis: 30%;
+    background: rgb(153, 142, 78);
+    border-radius: 30px;
+    margin: 20px 20px 5%;
+    padding: 40px 0;
+    box-sizing: border-box;
+    transition: 1s;
+    text-decoration: none;
+  }
+  
+  .subject:hover {
+    box-shadow: 0 0 20px 0px black;
+    background-color: goldenrod;
+    cursor: pointer;
+  }
+  
+  li#math {
+    list-style-image: url("images/mathIcon.png");
+  }
+  
+  li#science {
+    list-style-image: url("images/scienceIcon.png");
+  }
+  
+  li#english {
+    list-style-image: url("images/englishIcon.png");
+  }
+  
+  li#art {
+    list-style-image: url("images/artIcon.png");
+  }
+
+  
+  
+
+
+  /* rgba(2, 6, 14, 0.844), rgba(35, 88, 186, 0.844) */
+  /* rgba(145, 140, 119, 0.844), rgba(108, 141, 113, 0.476) */

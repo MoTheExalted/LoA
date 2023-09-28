@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase The Tragic Prelude</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    <script src="buy.js" async></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="ToA_Logo.png" alt="Logo"></a>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usHistory.html">U.S. History</a></li>
+                    <li><a href="worldHistory.html">World History</a></li>
+                    <li><a href="purchaseMerch.html">Merchandise</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- purchase form -->
+        <section id="summary">
+            <h1>The Tragic Prelude </h1>
+            <h2>by <a href="https://en.wikipedia.org/wiki/John_Steuart_Curry">John Steuart Curry</a></h2>
+            <img src="Hero.png" alt="Painting of John Brown" />
+            <p>"The Tragic Prelude" by John Steuart Curry depicts the abolitionist John Brown and the events surrounding him. 
+                The painting portrays Brown as a strong and determined figure, symbolizing his righteous conviction and unwavering 
+                commitment to ending slavery. It captures the intensity of his beliefs and actions, highlighting the tragic consequences 
+                of his failed raid on Harpers Ferry and his significance in the lead-up to the Civil War.</p>
+         </section>
+         
+         <section id="orderSection">
+            <form id="cart" name="cart" method="get" action="payment.html">
+              
+              <table id="cartTable">
+                 <caption>Shopping Cart</caption>
+                 <tr>
+                    <td>
+                       <label>The Tragic Prelude Painting ($30)</label>
+                       <input type="hidden" name="modelCost" id="modelCost" value="30.00" />
+                       <input type="hidden" id="modelName" name="modelName" value="The Tragic Prelude ($30.00)" />
+                    </td>
+                    <td class="rightA">
+                       <label for="modelQty">Qty</label>
+                       <select name="modelQty" id="modelQty">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option><option value="3">3</option>
+                          <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                          <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                          <option value="10">10</option>
+                       </select>   
+                    </td>                 
+                    <td>
+                       <input type="text" name="orderCost" id="orderCost" size="10" readonly />
+                    </td>
+                 </tr>
+                 <tr>
+                    <td colspan="2"> 
+                       <input type="hidden" id="shippingType" name="shippingType" />                
+                       <fieldset>
+                          <legend>Shipping</legend>
+                          <label><input type="radio" id="overnight" name="shipping" value="40.00" checked /> Overnight Shipping ($40.00 per)</label>
+                          <label><input type="radio" id="day_2" name="shipping" value="15.95" /> 2-Day Shipping ($15.95 per)</label>   
+                          <label><input type="radio" id="ground" name="shipping" value="10.95" /> Ground Shipping ($10.95 per)</label> 
+                       </fieldset>
+                    </td>
+                    <td>
+                       <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+                    </td>
+                 </tr>        
+                 <tr>
+                    <td colspan="2" class="rightA">Subtotal</td>
+                    <td class="outcell">
+                       <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td colspan="2" class="rightA">Tax (8%)</td>
+                    <td>
+                       <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td colspan="2" class="rightA">TOTAL</td>
+                    <td>
+                       <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+                   </td>
+                 </tr>
+              </table>
+              
+              <input type="submit" id="aoc" value="Add To Cart" />
+
+      
+            </form>
+         </section>
+
+    </section>
+
+    
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usHistory.html">U.S. History</a></li>
+            <li><a href="worldHistory.html">World History</a></li>
+            <li><a href="purchaseMerch.html">Merchandise</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Agora</a></li>
+            <li><a href="#">All resources</a></li>
+            <li><a href="#">Support Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library of Alexandria</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="home.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="mobileFunctions.js" defer></script>
+
+</head>
+<body>
+
+<!-- goal of the website and leads to the resources where people can just see everything offered -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ToA_Logo.png" alt="Logo"></a>
+            <div class="navLinks" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usHistory.html">U.S. History</a></li>
+                    <li><a href="worldHistory.html">World History</a></li>
+                    <li><a href="purchaseMerch.html">Merchandise</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="goals">
+            <h1>Our Hopes for This Website</h1>
+            <p>At The Library of Alexandria, we strive to create a platform that not only empowers 
+                individuals with knowledge but also fosters a sense of shared responsibility and social consciousness. 
+                We believe that by working together and addressing the social concerns that have plagued society since the dawn of the modern age, 
+                we can forge a brighter future. Our mission is to inspire our users to be more open-minded, empathetic, and collaborative. 
+                Through our comprehensive range of educational resources and thought-provoking content, 
+                we aim to ignite conversations and encourage critical thinking about the pressing social issues that shape our world. 
+                By cultivating a community of learners who are passionate about effecting positive change, 
+                we can collectively build a society that embraces equality, justice, and sustainable progress.</p>
+
+                <a href="#"><button>Enter the Library</button></a>
+
+        </div>
+    </section>
+
+<!-- courses offered -->
+    <section class="course">
+        <h1>Courses</h1>
+        <p>As of now we only offer 3 courses, as these 3 are our specialties</p>
+
+                <div class="row">
+                    <div class="subject" onclick="navigateTo('usHistory.html');">
+                        <h3>United States History Course</h3>
+                        <p>Explore America's past, from colonial times to today, 
+                            and discover influential events and figures that have shaped the nation.</p>
+                    </div>
+
+                <div class="subject" onclick="navigateTo('worldHistory.html');">
+                    <h3>World History Course</h3>
+                    <p>Uncover the diverse tapestry of human history, spanning ancient civilizations to the modern era,
+                         and delve into shared cultural experiences.</p>
+                </div>
+
+
+                <div class="subject" onclick="navigateTo('#');">
+                    <h3>U.S. Government & Politics Course</h3>
+                    <p>Delve into American politics, from landmark court cases to legislative processes, 
+                        understanding laws' impact on citizens and non-citizens alike.</p>
+                </div>
+        </div>
+
+            <h2>Future Courses</h2>
+            <ul>
+                <li id="math"><strong>Math</strong>: Mathematics cultivates logical reasoning, problem-solving skills, and quantitative literacy, 
+                    essential for fields like science, engineering, and finance. It enables individuals to analyze data, make informed decisions, 
+                    and understand patterns in the world around them.</li>
+                <li id="science"><strong>Science</strong>: Science fosters curiosity, critical thinking, and a spirit of inquiry. Through scientific exploration, 
+                    individuals develop an understanding of the natural world, learn to question and challenge assumptions, and 
+                    contribute to advancements in various fields, ranging from medicine to environmental sustainability.</li>
+                <li id="english"><strong>English</strong>: English language and literature provide vital communication skills, critical analysis, 
+                    and cultural literacy. It enhances written and oral communication, fosters empathy through literary exploration, 
+                    and equips individuals with the ability to analyze complex texts and articulate their thoughts effectively.</li>
+                <li id="art"><strong>Art</strong>: Art nurtures creativity, self-expression, and aesthetic appreciation. It allows individuals 
+                    to explore their imagination, develop problem-solving skills, and communicate ideas visually. Artistic engagement 
+                    fosters empathy, cultural understanding, and the ability to perceive and interpret the world from different perspectives.</li>
+            </ul>
+    </section>
+
+
+<!-- makes the div of courses clickable and leads to a page -->
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usHistory.html">U.S. History</a></li>
+            <li><a href="worldHistory.html">World History</a></li>
+            <li><a href="purchaseMerch.html">Merchandise</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Agora</a></li>
+            <li><a href="#">All resources</a></li>
+            <li><a href="#">Support Us</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

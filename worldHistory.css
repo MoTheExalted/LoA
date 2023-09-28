@@ -1,0 +1,36 @@
+.header{
+    background-image:linear-gradient(rgba(35, 88, 186, 0.844),rgba(2, 6, 14, 0.844)),url(LoA.png);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .big-image {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .big-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .small-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .small-images img {
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  

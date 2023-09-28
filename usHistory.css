@@ -1,0 +1,51 @@
+.header{
+    background-image:linear-gradient(rgba(35, 88, 186, 0.844),rgba(2, 6, 14, 0.844)),url(abeLincoln.png);
+}
+
+
+/* calendar styles */
+
+#calendar_table {
+    background-color: rgb(162, 147, 10);  
+    font-size: 0.9em; 
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    width: 100%;
+ 
+    box-shadow: rgb(48, 48, 43) 0px 0px 1px,
+                rgb(48, 48, 43) 0px 0px 5px, 
+                rgb(48, 48, 43) 0px 0px 10px,
+                rgb(48, 48, 43) 0px 0px 20px;               
+ }
+ 
+ #calendar_table caption {
+    caption-side: top; 
+    text-align: center;
+    padding-bottom: 20px; 
+    font-size: 1.6em; 
+    letter-spacing: 0.3em;
+ }
+ 
+ .calendar_weekdays {
+    background-color: rgb(34, 101, 178);
+    width: 14.28%; 
+    font-size: 1em; 
+    border-bottom: 3px solid rgb(0, 83, 248);
+ }
+ 
+ .calendar_dates {
+    text-align: left; 
+    vertical-align: top;
+    font-size: 0.8em;
+    padding: 3px;
+    border: 1px dotted gray;
+    background-color: white;
+    height: 60px;
+ }
+ 
+ #calendar_today {
+    font-weight: bold; 
+    color: rgb(51, 51, 51);
+    background-color: rgba(35, 88, 186, 0.844);
+    border: 1px solid black;
+ }
+ 

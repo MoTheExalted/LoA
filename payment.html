@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    <script src="payment.js" async></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ToA_Logo.png" alt="Logo"></a>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usHistory.html">U.S. History</a></li>
+                    <li><a href="worldHistory.html">World History</a></li>
+                    <li><a href="purchaseMerch.html">Merchandise</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="paySection">
+            <h1>Payment Form</h1>
+            
+            <form id="order" name="order">       
+              <table id="orderTable">
+                 <tr>
+                    <td>
+                       <input type="text" name="modelName" id="modelName" readonly  /> 
+                       X
+                       <input type="text" name="modelQty" id="modelQty"  readonly />                                              
+                    </td>                
+                    <td>
+                       <input type="text" name="orderCost" id="orderCost" size="10"  readonly />
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                       <input type="text" name="shippingType" id="shippingType"  readonly />
+                    </td>
+                    <td>
+                       <input type="text" name="shippingCost" id="shippingCost" size="10" readonly  />
+                    </td>
+                 </tr>        
+                 <tr>
+                    <td class="rightA">Subtotal</td>
+                    <td class="outcell">
+                       <input type="text" name="subTotal" id="subTotal" size="10" readonly  />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td class="rightA">Tax (5%)</td>
+                    <td>
+                       <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td class="rightA">TOTAL</td>
+                    <td>
+                       <input type="text" name="cartTotal" id="cartTotal" size="10" readonly  />
+                    </td>
+                 </tr>
+              </table>
+            </form>      
+      
+            <form id="credit" name="credit" method="post" action="paymentValid.html">         
+               <fieldset id="creditcard">
+                  <legend>Credit Information</legend>
+      
+                  <label for="cardHolder">Card Holder*</label>
+                  <input name="cardHolder" id="cardHolder" required type="text" />              
+      
+                  <fieldset id="cards">
+                     <label class="cardLabel">Credit Company*</label>
+                     <label class="cardLabel">
+                        <input name="company" value="amex" type="radio" required />
+                        <img src="images/cardAmex.png" alt="American Express" />
+                     </label>
+                     <label class="cardLabel">               
+                        <input name="company" value="discover" type="radio" />
+                        <img src="images/cardDiscover.png" alt="Discover" />
+                     </label>
+                     <label class="cardLabel">                  
+                        <input name="company" value="master" type="radio"  />
+                        <img src="images/cardMaster.png" alt="MasterCard" />
+                     </label>
+                     <label class="cardLabel">                  
+                        <input name="company" value="visa" type="radio"  />
+                        <img src="images/cardVisa.png" alt="Visa" />
+                     </label>
+                  </fieldset>          
+      
+                  <label for="cardNumber">Credit Card Number*</label>
+                  <input name="cardNumber" id="cardNumber" required type="text"
+                         pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+      
+                  <label for="expDate">Expiration Date*</label>
+                  <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+      
+                  <label for="cvc">CVC*</label>
+                  <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+               </fieldset>
+      
+               <p id="footnote">* - Required Item</p>        
+               <input type="submit" id="subButton" value="Submit" />         
+            </form>
+      
+         </section>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usHistory.html">U.S. History</a></li>
+            <li><a href="worldHistory.html">World History</a></li>
+            <li><a href="purchaseMerch.html">Merchandise</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Agora</a></li>
+            <li><a href="#">All resources</a></li>
+            <li><a href="#">Support Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

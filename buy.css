@@ -1,0 +1,150 @@
+/* Section Styles */
+
+section#summary {
+    -webkit-flex: 1 1 50px;
+    flex: 1 1 50px;
+    padding: 20px 0px 10px 20px;
+ }
+ 
+ section#summary h1 {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: aliceblue;
+ }
+ 
+ section#summary h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+
+ }
+ 
+ section#summary h3 {
+    font-size: 1em;
+    font-weight: normal; 
+    margin-bottom: 20px;
+    color: aliceblue;  
+ }
+ 
+ section#summary > img {
+    display: block;
+    width: 500px;
+    height: 400px;
+    margin: 0px auto;
+ }
+ 
+ section#summary p {
+    font-size: 0.9em;
+    text-align: center;
+    color: aliceblue; 
+    padding: 5%; 
+ }
+ 
+ section#orderSection {
+    -webkit-flex: 1 1 200px;
+    flex: 1 1 200px;
+    margin: 20px;
+ }
+    
+ /* Order Table Styles */
+ 
+ table#cartTable {
+    margin: 15px;
+    width: 95%;
+    border-collapse: collapse;
+ }
+ 
+ form#cart fieldset {
+    border: none;
+    margin-left: -10px;
+ }
+ 
+ form#cart input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+ 
+ table#cartTable caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: left;
+    caption-side: top;
+    margin-bottom: 20px;
+ }
+ 
+ 
+ table#cartTable td {
+    height: 30px;
+    vertical-align: top;
+ }
+ 
+ 
+ form#cart input[type="text"] {
+    color: rgba(226, 201, 15, 0.5);
+ }
+ 
+ form#cart select {
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+ }
+ 
+ 
+ table#cartTable tr td:last-of-type input {
+    text-align: right;
+    border: none;
+ }
+ 
+ table#cartTable tr:nth-of-type(3) {
+    border-bottom: 1px solid rgba(226, 201, 15, 0.5);
+ }
+ 
+ table#cartTable tr:nth-of-type(2) td, table#cartTable tr:nth-of-type(4) td {
+    padding-top: 15px;
+ }
+ 
+ table#cartTable tr:nth-of-type(5) td {
+    border-bottom: 6px double rgba(226, 201, 15, 0.5);
+ }
+ 
+ table#cartTable tr:last-of-type td {
+    padding-top: 15px;
+ }
+ 
+ table#cartTable td.rightA {
+    text-align: right;
+    padding-right: 10px;
+ }
+ 
+ form#cart fieldset label {
+    display: block;
+ }
+
+ /* button styles */
+ 
+form#cart input#aoc {
+    margin-top: 50px;
+    float: right;
+    margin-right: 330px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+ }
+      
+form#cart input#aoc:hover {
+    border: 1px solid yellow;
+    background: gold;
+    transition: 0.5s;
+}
+
+caption,label,td{
+    color: aliceblue;
+    font-size: 18px;
+}

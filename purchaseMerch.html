@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="purchaseMerch.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    <script src="purchaseMerch.js" async></script>
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ToA_Logo.png" alt="Logo"></a>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usHistory.html">U.S. History</a></li>
+                    <li><a href="worldHistory.html">World History</a></li>
+                    <li><a href="purchaseMerch.html">Merchandise</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+                <form id="memberForm">
+                    <label for="usernameLabel">Member Name</label>
+                    <input id="username" name="user" type="text" />
+                    <label for="passwordLabel">Password</label>
+                    <input type="password" id="password" name="pwd" />
+                    <button id="loginButton">Login</button>
+                 </form>
+                 <!-- js will fill the div -->
+                 <div id="greeting"></div> 
+            </div>
+        </nav>
+
+        <div id="purchaseItems">
+            <figure>
+                <a href="buy1.html">
+                  <img src="images/Hero.png" alt="painting">
+                </a>
+                <figcaption>The Tragic Prelude ($30) </figcaption>
+              </figure>
+              
+              <figure>
+                <a href="buy2.html">
+                  <img src="images/socratesBust.png" alt="bust">
+                </a>
+                <figcaption>Bust of Socrates ($50)</figcaption>
+              </figure>
+              
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usHistory.html">U.S. History</a></li>
+            <li><a href="worldHistory.html">World History</a></li>
+            <li><a href="purchaseMerch.html">Merchandise</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Agora</a></li>
+            <li><a href="#">All resources</a></li>
+            <li><a href="#">Support Us</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
