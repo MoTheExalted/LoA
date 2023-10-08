@@ -1,8 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
-    font-weight: bolder;
     font-size: 25px;
   }
 
@@ -55,7 +52,7 @@ nav {
 }
   
 nav img {
-  width: 200px;
+  width: 50%;
 }
   
 .navLinks{
@@ -141,9 +138,9 @@ nav .fa{
     font-size: 25px;
   }
 
-  .goals p {
+  /* .goals p {
     font-size: 10px;
-  }
+  } */
 
   .navLinks ul li {
     display: block;

@@ -6,15 +6,19 @@
     <title>World History</title>
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="worldHistory.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="imageSlider.js" async></script>
+    <script src="mobileFunctions.js" defer></script>
+
 
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/ToA_Logo.png" alt="Logo"></a>
-            <div class="navLinks">
+            <div class="navLinks" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="usHistory.html">U.S. History</a></li>
@@ -23,6 +27,8 @@
                     <li><a href="aboutUs.html">About Us</a></li>
                 </ul>
             </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
      <div class="goals">
         <h1>World History</h1>

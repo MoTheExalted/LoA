@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
     <script src="mobileFunctions.js" defer></script>
+    <script src="taskList.js" defer></script>
 
 </head>
 <body>
@@ -51,43 +53,69 @@
         <h1>Courses</h1>
         <p>As of now we only offer 3 courses, as these 3 are our specialties</p>
 
-                <div class="row">
-                    <div class="subject" onclick="navigateTo('usHistory.html');">
-                        <h3>United States History Course</h3>
-                        <p>Explore America's past, from colonial times to today, 
-                            and discover influential events and figures that have shaped the nation.</p>
+                    <div class="row">
+                        <div class="subject" onclick="navigateTo('usHistory.html');">
+                            <h3>United States History Course</h3>
+                            <p>Explore America's past, from colonial times to today, 
+                                and discover influential events and figures that have shaped the nation.</p>
+                        </div>
+
+                        <div class="subject" onclick="navigateTo('worldHistory.html');">
+                            <h3>World History Course</h3>
+                            <p>Uncover the diverse tapestry of human history, spanning ancient civilizations to the modern era,
+                                and delve into shared cultural experiences.</p>
+                        </div>
+
+                        <div class="subject" onclick="navigateTo('#');">
+                            <h3>U.S. Government & Politics Course</h3>
+                            <p>Delve into American politics, from landmark court cases to legislative processes, 
+                                understanding laws' impact on citizens and non-citizens alike.</p>
+                        </div>
                     </div>
 
-                <div class="subject" onclick="navigateTo('worldHistory.html');">
-                    <h3>World History Course</h3>
-                    <p>Uncover the diverse tapestry of human history, spanning ancient civilizations to the modern era,
-                         and delve into shared cultural experiences.</p>
+                 <div id="toDoList">
+                    <h3>My To-Do List</h3>
+                    <p>Take Advantage of this to do list to keep track of what topics you need or want to study!
+                        Also feel free to add in your own topics. Take advantage of color coding your tasks to whatever you want. Studies show 
+                        color coding helps keep your productivity up.
+                    </p>
+                    <input type="text" name="task" id="taskInput" placeholder="Your Task">
+                    <input type="color" name="colorCode" id="taskColor" value="#000000">
+                    <input type="date" name="due" id="taskDate">
+                    <button onclick="addTask()" id="addbtn">Add</button>
+
+                    <div id="taskList">
+                        <ul id="ulTaskList">
+                            <li>Articles of Confederation</li>
+                            <li>The Seven Years' War</li>
+                            <li>Political Action Comittees (PACs)</li>
+                            <li>The Great Awakening</li>
+                        </ul>
+                    </div>
+                 </div>
+
+
+                 <div id="futureCourses">
+                    <h2>Future Courses</h2>
+                    <ul>
+                        <li id="math"><strong>Math</strong>: Mathematics cultivates logical reasoning, problem-solving skills, and quantitative literacy, 
+                            essential for fields like science, engineering, and finance. It enables individuals to analyze data, make informed decisions, 
+                            and understand patterns in the world around them.</li>
+                        <li id="science"><strong>Science</strong>: Science fosters curiosity, critical thinking, and a spirit of inquiry. Through scientific exploration, 
+                            individuals develop an understanding of the natural world, learn to question and challenge assumptions, and 
+                            contribute to advancements in various fields, ranging from medicine to environmental sustainability.</li>
+                        <li id="english"><strong>English</strong>: English language and literature provide vital communication skills, critical analysis, 
+                            and cultural literacy. It enhances written and oral communication, fosters empathy through literary exploration, 
+                            and equips individuals with the ability to analyze complex texts and articulate their thoughts effectively.</li>
+                        <li id="art"><strong>Art</strong>: Art nurtures creativity, self-expression, and aesthetic appreciation. It allows individuals 
+                            to explore their imagination, develop problem-solving skills, and communicate ideas visually. Artistic engagement 
+                            fosters empathy, cultural understanding, and the ability to perceive and interpret the world from different perspectives.</li>
+                    </ul>
                 </div>
-
-
-                <div class="subject" onclick="navigateTo('#');">
-                    <h3>U.S. Government & Politics Course</h3>
-                    <p>Delve into American politics, from landmark court cases to legislative processes, 
-                        understanding laws' impact on citizens and non-citizens alike.</p>
-                </div>
-        </div>
-
-            <h2>Future Courses</h2>
-            <ul>
-                <li id="math"><strong>Math</strong>: Mathematics cultivates logical reasoning, problem-solving skills, and quantitative literacy, 
-                    essential for fields like science, engineering, and finance. It enables individuals to analyze data, make informed decisions, 
-                    and understand patterns in the world around them.</li>
-                <li id="science"><strong>Science</strong>: Science fosters curiosity, critical thinking, and a spirit of inquiry. Through scientific exploration, 
-                    individuals develop an understanding of the natural world, learn to question and challenge assumptions, and 
-                    contribute to advancements in various fields, ranging from medicine to environmental sustainability.</li>
-                <li id="english"><strong>English</strong>: English language and literature provide vital communication skills, critical analysis, 
-                    and cultural literacy. It enhances written and oral communication, fosters empathy through literary exploration, 
-                    and equips individuals with the ability to analyze complex texts and articulate their thoughts effectively.</li>
-                <li id="art"><strong>Art</strong>: Art nurtures creativity, self-expression, and aesthetic appreciation. It allows individuals 
-                    to explore their imagination, develop problem-solving skills, and communicate ideas visually. Artistic engagement 
-                    fosters empathy, cultural understanding, and the ability to perceive and interpret the world from different perspectives.</li>
-            </ul>
     </section>
+
+
+
 
 
 <!-- makes the div of courses clickable and leads to a page -->

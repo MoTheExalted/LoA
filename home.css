@@ -3,6 +3,10 @@
   .header {
     background-image:linear-gradient(rgba(35, 88, 186, 0.844),rgba(2, 6, 14, 0.844)),url(images/TheLibrary.png);
   }
+
+  div{
+    margin-top:20px;
+  }
   
   .goals button {
     margin-top: 50px;
@@ -25,11 +29,12 @@
   
   section.course {
     flex: 1;
-    width: 70%;
+    width: 75%;
+    flex-wrap: wrap;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: aliceblue;
   }
 
@@ -45,7 +50,7 @@
     background-color: rgb(193, 176, 79);
     font-style: oblique;
   }
-  section.course h3 {
+   h3 {
     font-family: fantasy;
     font-size: 30px;
     font-weight: bold;
@@ -61,28 +66,132 @@
   
   /* row syles */
   .row {
-    margin-top: 5%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .row2{
-    margin-top: 8%;
-    margin-left: 8px;
     display: flex;
     justify-content: space-between;
-
   }
   
   .subject {
     flex-basis: 30%;
     background: rgb(153, 142, 78);
     border-radius: 30px;
-    margin: 20px 20px 5%;
-    padding: 40px 0;
+    margin-bottom: 20px;
+    padding: 20px ;
     box-sizing: border-box;
     transition: 1s;
     text-decoration: none;
+  }
+
+  /* To-Do List styles */
+  #taskList ul li{
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    background: white;
+    color: black;
+    transition: 0.5s;
+
+    /* list items unselectable */
+    -webkit-user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+  }  
+
+  #taskList ul li:nth-child(odd){
+    background-color: rgb(151, 146, 146);
+  }
+
+  #taskList ul li:hover{
+    background: gold;
+  }
+
+  /* since the user should be able to undo changes, just strike out completed tasks */
+  #taskList ul li.checked {
+    background: green;
+    text-decoration: line-through;
+  }
+
+  /* check mark to completed tasks */
+  #taskList ul li.checked:before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .close{
+    position:absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-4%);
+    padding: 6px;
+  }
+
+  .close:hover{
+    background-color: red;
+    color:white;
+    transition: 0.2s;
+    width: auto;
+
+  }
+
+  #taskInput{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 93%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  #addbtn{
+    padding: 5px;
+    width: 25%;
+    background: rgb(153, 142, 78);
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0;
+
+  }
+
+  #addbtn:hover{
+    background: gold;
+  }
+  
+  #taskDate{
+    padding: 5px;
+    width: 42%;
+    background: rgba(35, 88, 186, 0.844);
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0;
+  }
+
+  #taskColor{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  
+  @media (max-width:700px) {
+    .subject{
+      flex-basis: auto !important;
+    }
   }
   
   .subject:hover {
