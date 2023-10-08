@@ -43,7 +43,7 @@
                 By cultivating a community of learners who are passionate about effecting positive change, 
                 we can collectively build a society that embraces equality, justice, and sustainable progress.</p>
 
-                <a href="#"><button>Enter the Library</button></a>
+                <a href="#"><button id="enterWeb" onclick="scrollDown();">Enter the Library</button></a>
 
         </div>
     </section>
@@ -122,6 +122,14 @@
     <script>
         function navigateTo(url) {
             window.location.href = url;
+        }
+
+        function scrollDown(){
+            var courses=document.getElementsByClassName('course')[0];
+
+            if (courses){
+                courses.scrollIntoView({behavior: 'smooth'});
+            }
         }
     </script>
 
